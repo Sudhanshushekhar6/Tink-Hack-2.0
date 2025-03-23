@@ -1,124 +1,70 @@
-# Jeevni - Your Health, Our Innovation 🏥💙
+# ArogyaAI - AI-Driven Medical Image Interpretation
 
-<img src="static/images/doctors-animate.svg" align="right" height="300px">
+## 🚀 Overview
+ArogyaAI is an **AI-powered healthcare ecosystem** designed to revolutionize **medical image interpretation, disease diagnosis, virtual consultations, and mental health assessments**. By leveraging state-of-the-art **machine learning (ML) and deep learning (DL) models**, ArogyaAI enhances accessibility, speeds up diagnosis, and improves patient outcomes.
 
-Jeevni is an **AI-powered healthcare revolution** designed to **eliminate barriers between doctors and patients**. With cutting-edge technology, **intelligent disease prediction**, and **seamless virtual consultations**, Jeevni redefines the way healthcare is delivered. Our mission is to create a **smarter, faster, and more accessible medical ecosystem**, ensuring quality healthcare for all.
+## 🎯 Problem Statement
+**Image Interpretation for Medical Diagnostics** – Develop a solution for interpreting images of **diseases, symptoms, X-rays, and other medical scans**. The healthcare industry faces significant challenges, including:
+- **Limited accessibility** – Many regions lack specialized doctors and diagnostic facilities.
+- **Delayed diagnosis** – Late-stage disease detection leads to severe complications.
+- **High misdiagnosis rates** – Manual medical scan analysis is prone to human error.
+- **Mental health neglect** – Psychological well-being often lacks personalized assessment.
 
----
+## 💡 Solution
+ArogyaAI **leverages AI to transform medical diagnostics and healthcare efficiency**:
+✅ **Medical Image Interpretation** – AI models analyze X-rays, MRIs, and other medical scans with high accuracy.
+✅ **Early Disease Prediction** – AI-driven diagnosis of critical illnesses like lung disease and brain tumors.
+✅ **Mental Health Assessment** – Mood tracking and personalized therapy recommendations using AI.
+✅ **Automated & Fast Diagnosis** – Reduces manual effort and speeds up medical report evaluation.
+✅ **Accessible Anywhere** – Cloud-based AI ensures healthcare support in remote areas.
 
-## 🌟 Transforming Healthcare with Innovation
+## 🏥 Business & Social Impact
+- **Market Differentiation** – AI-driven, faster, and more affordable healthcare.
+- **Revenue Streams** – Subscription-based services, hospital AI integrations, and premium analytics.
+- **Scalability** – Deployed on **Google Vertex AI, Azure ML, and Firebase** for seamless growth.
+- **Healthcare Accessibility** – Providing AI-assisted medical support in underserved areas.
 
-### 🩺 **Smart Patient-Doctor Engagement**
-- Patients and doctors can **register, manage profiles, and connect instantly**.
-- Secure authentication for hassle-free **logins and personalized dashboards**.
-- **Appointment booking & real-time scheduling** for efficient medical care.
+## 🔬 AI & ML Technologies Used
+### **Medical Image Interpretation & Disease Diagnosis**
+- **Deep Learning:** CNNs for MRI/X-ray analysis
+- **NLP for Virtual Consultations:** Google Med-PaLM, Llama 3
+- **Explainable AI:** Heatmaps & feature importance visualization
 
-### 🤖 **AI-Powered Symptom Analysis & Disease Prediction**
-- Advanced **Machine Learning models** analyze symptoms and provide **early disease detection**.
-- **Decision Tree Classifier** for accurate medical predictions.
-- Personalized **health recommendations and action plans**.
+### **Mental Health & Wellness AI**
+- **Mood Tracking:** LSTMs & transformer-based models (PsychAI, MoodSense)
+- **Personalized Therapy:** Reinforcement learning-based recommendations
 
-### 📖 **Intelligent Health Insights & Knowledge Hub**
-- AI-curated **blogs & articles** covering:
-  - Revolutionizing Healthcare with AI 🧠
-  - Holistic Healing & Mental Wellness 🌿
-  - Nutrition & Preventive Care 🥗
-  - The Role of Fitness & Sports in Longevity ⚽
-- Enhancing **awareness, prevention, and better lifestyle choices**.
+### **Tech Stack & Deployment**
+- **Frontend:** React.js, Next.js
+- **Backend:** Flask, FastAPI, Node.js
+- **AI/ML Models:** TensorFlow, PyTorch, Hugging Face Transformers
+- **Cloud & Infra:** Azure ML, Firebase
+- **Database:** PostgreSQL, MongoDB
 
-### 🧠 **Mental Health & Emotional Well-being Analysis**
-- AI-driven **mental health assessments** based on user interactions.
-- **Personalized insights** for emotional stability and psychological wellness.
+## ⚙️ Installation & Setup
+```bash
+# Clone the repository
+git clone https://github.com/your-repo/arogyaai.git
+cd arogyaai
 
-### 🔬 **AI-Driven Medical Scan Assistance**
-- Provides **detailed guidance** on medical scans (Brain Tumor, Lung, Cataract, and more).
-- **Preliminary AI analysis** to enhance diagnosis efficiency.
+# Install dependencies
+pip install -r requirements.txt  # Backend dependencies
 
-### 📹 **Virtual Consultation & Telemedicine with Zigo Cloud**
-- **Zigo Cloud-powered video consultations** for real-time **remote healthcare**.
-- **Secure & encrypted communication** between patients and doctors.
+# Run the backend
+python app.py
 
-### 🔐 **Robust Security & Data Privacy**
-- **Encrypted patient records & secure authentication** to protect sensitive information.
-- Comprehensive **privacy policies** ensuring data confidentiality.
-
-### 🔧 **AI-Powered Admin Dashboard**
-- Centralized **admin control for managing users, appointments, and analytics**.
-- AI-backed **performance insights & optimization tools**.
-
----
-
-## 📂 Project Structure
-
-```
-📁 HackAthena25
-│── app.py               # Main Flask application
-│── database.db          # SQLite database
-│── requirements.txt     # Dependencies
-│── static/              # Static files (CSS, Images, Data)
-│── templates/           # HTML templates
-│── models.py            # Database models
-│── notebook             # Scan of disease
-│── README.md            # This document
+# Run the frontend
+yarn start
 ```
 
----
+## 🛠 Future Enhancements
+- **Real-time AI-powered doctor recommendations**
+- **Integration with IoT medical devices for continuous monitoring**
+- **Expansion to multi-disease prediction models**
 
-## 🚀 Getting Started
+## 🤝 Contributing
+We welcome contributions! Feel free to submit issues and pull requests.
 
-Follow these steps to set up Jeevni on your local system:
-
-1️⃣ **Clone the Repository**
-```sh
-  git clone https://github.com/Sudhanshushekhar6/HackAthena25.git
-  cd Jeevni
-```
-
-2️⃣ **Install Dependencies**
-```sh
-  pip install -r requirements.txt
-```
-
-3️⃣ **Run the Application**
-```sh
-  python app.py
-```
-
-4️⃣ **Access the Platform**
-- Open [http://localhost:5000](http://localhost:5000) in your browser.
 
 ---
-
-## 🛠 Technology Stack
-
-- Flask 🐍
-- Flask-SQLAlchemy 🗃️
-- Plotly 📊
-- NumPy 🔢
-- TensorFlow 🤖
-- Scikit-learn 🏥
-- **Zigo Cloud** ☁️ (for video consultation services)
-
----
-
-## 📜 License
-
-Jeevni is licensed under the **[MIT License](LICENSE)**, empowering open-source contributions and future advancements. 🎉
-
----
-
-## 🎯 The Future of Jeevni
-Jeevni envisions a **fully AI-integrated, multilingual, and blockchain-powered healthcare system**. Our future roadmap includes:
-
-- 🌍 **Multilingual Support**: Breaking language barriers by integrating AI-powered real-time translations for seamless doctor-patient communication.
-- 🔗 **Blockchain for Secure Medical Records**: Ensuring **tamper-proof, decentralized, and transparent** health data storage and sharing.
-- 📡 **IoT-Enabled Remote Health Monitoring**: Smart wearables and IoT devices to provide **real-time health tracking and alerts**.
-- 🧬 **AI-Driven Personalized Medicine**: Leveraging **genomics and deep learning** for customized treatment plans.
-- 🏥 **Augmented Reality (AR) for Medical Training**: Enhancing **medical education and diagnostics** with AR simulations.
-- 🚀 **Predictive Healthcare Analytics**: AI-powered insights to **forecast potential health risks and prevent diseases** proactively.
-
-Our commitment to **technology-driven healthcare accessibility** ensures **a healthier tomorrow for everyone**. 🚀✨
-
----
-
-> **"Your Health, Our Innovation!"** 💙
+ArogyaAI - **Transforming Healthcare with AI**
