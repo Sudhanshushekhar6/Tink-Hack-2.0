@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeevni</title>
+    <title>ArogyaAI</title>
     <link rel="icon" href="./static/images/heart-pulse-solid.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -46,7 +46,7 @@
 <body>
 
     <header class="header">
-        <a href="{{url_for('index')}}" class="logo"><i class="fas fa-heartbeat"></i> Jeevni</a>
+        <a href="{{url_for('index')}}" class="logo"><i class="fa-solid fa-stethoscope" style="color: #FFD43B"></i></i> ArogyaAI</a>
         <nav class="navbar">
             {% if username %}
             <a href="{{url_for('index')}}#home">Home</a>
@@ -67,16 +67,16 @@
 
     <section class="home" id="home">
         <div class="image">
-            <img src="../static/images/doctors-animate.svg" alt="">
+             <img src="../static/images/doctors-animate.svg" alt="">
 
         </div>
         <div class="content">
-            <h3>Welcome to <span style="color: #16a085;">Jeevni</span> . <br> <span style="font-size: 4.0rem;">your
-                    Personalized Healthcare telemedicine assistant platform.</span></h3>
+            <h3>Welcome to <span style="color: #16a085;">ArogyaAI</span> . <br> <span style="font-size: 4.0rem;">your
+                personalized AI assistant platform for enhanced healthcare.</span></h3>
             <!-- <h3>stay healthy</h3> -->
-            <p>Artificial Intelligence (AI) has revolutionized the field of telemedicine and healthcare, offering
-                innovative solutions
-                to enhance patient care, improve efficiency, and streamline various processes.</p>
+            <p>Artificial Intelligence (AI) has transformed telemedicine and healthcare by providing innovative solutions
+                
+                to enhance patient care, boost efficiency, and optimize various processes.</p>
             <a href="#services" class="btn-home">Learn more<span class="fas fa-chevron-right"></span></a>
         </div>
     </section>
@@ -251,9 +251,8 @@
             </div>
             <div class="glass-box">
                 <i class="fas fa-lungs"></i>
-                <h3>Lung Cancer</h3>
-                <p>Lung cancer is a malignant lung tumor, often caused by smoking. Symptoms include coughing, chest pain, and difficulty
-                breathing.</p>
+                <h3>Chest-Xray</h3>
+                <p>Influenza (flu) is a contagious respiratory illness caused by influenza viruses, leading to symptoms like fever, cough, sore throat, body aches, and fatigue.</p>
                 <a href="{{url_for('lung')}}" class="btn"> Explore <span class="fas fa-chevron-right"></span></a>
             </div>
             <div class="glass-box">
@@ -263,13 +262,13 @@
                 chemotherapy.</p>
                 <a href="{{url_for('braintumor')}}" class="btn"> Explore <span class="fas fa-chevron-right"></span></a>
             </div>
-            <div class="glass-box">
+            <!-- <div class="glass-box">
                 <i class="fas fa-eye"></i>
                 <h3>cataract</h3>
                 <p>Cataract is a clouding of the eye's lens, causing blurry vision. Common with aging, surgery replaces the clouded lens
                 for clarity.</p>
                 <a href="{{url_for('cataract')}}" class="btn"> Explore <span class="fas fa-chevron-right"></span></a>
-            </div>
+            </div> -->
 
 
         </div>
@@ -287,7 +286,7 @@
                 </div>
                 <div class="content">
                     <div class="icon">
-                        <a href="" class="disabled"><i class="fas fa-calendar"></i> 27th Feb, 2025</a>
+                        <a href="" class="disabled"><i class="fas fa-calendar"></i> 20th mar, 2025</a>
                         <a href="{{url_for('admin')}}"><i class="fas fa-user"></i> by admin</a>
 
                     </div>
@@ -303,7 +302,7 @@
                 </div>
                 <div class="content">
                     <div class="icon">
-                        <a href="" class="disabled"><i class="fas fa-calendar"></i> 27th Feb, 2025</a>
+                        <a href="" class="disabled"><i class="fas fa-calendar"></i> 20th mar, 2025</a>
                         <a href="{{url_for('admin')}}"><i class="fas fa-user"></i> by admin</a>
 
                     </div>
@@ -320,7 +319,7 @@
                 </div>
                 <div class="content">
                     <div class="icon">
-                        <a href="" class="disabled"><i class="fas fa-calendar"></i> 27th Feb, 2025</a>
+                        <a href="" class="disabled"><i class="fas fa-calendar"></i> 21th mar, 2025</a>
                         <a href="{{url_for('admin')}}"><i class="fas fa-user"></i> by admin</a>
 
                     </div>
@@ -337,7 +336,7 @@
                 </div>
                 <div class="content">
                     <div class="icon">
-                        <a href="" class="disabled"><i class="fas fa-calendar"></i> 27th Feb, 2025</a>
+                        <a href="" class="disabled"><i class="fas fa-calendar"></i> 20th mar, 2025</a>
                         <a href="{{url_for('admin')}}"><i class="fas fa-user"></i> by admin</a>
 
                     </div>
@@ -354,7 +353,7 @@
         <h1 class="heading">About <span> Us </span></h1>
         <div class="row">
             <div class="image">
-                <img src="../static/images/about-us-page-animate.svg" alt="">
+                <img src="../static/images/doctors-animate.svg" alt="home-page"> 
 
             </div>
             <div class="content">
@@ -412,7 +411,7 @@
             </div>
         </div>
 
-        <div class="credit">made with 💚 | Jeevni@ 2025</div>
+        <div class="credit">made with 💚 | ArogyaAI@ 2025</div>
     </section>
     <script src="./static/js/script.js"></script>
     <script>
@@ -439,7 +438,7 @@
         });
     </script>
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger intent="WELCOME" chat-title="JanSevak" agent-id="2bb91a2b-a2a4-4283-be4d-e593eeb44bfb"
+    <df-messenger intent="WELCOME" chat-title="AarogyaAI" agent-id="2bb91a2b-a2a4-4283-be4d-e593eeb44bfb"
         language-code="en"></df-messenger>
 
 

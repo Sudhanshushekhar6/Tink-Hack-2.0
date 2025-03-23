@@ -25,6 +25,16 @@ from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Image, Spacer
 from io import BytesIO
+styles = getSampleStyleSheet()
+
+# Create content list
+content = []
+
+# Define text
+text = "This is some prescription text"
+
+# Append as a Paragraph
+content.append(Paragraph(text, styles["Normal"]))
 
 app = Flask(__name__)
 mail = Mail(app)
@@ -46,9 +56,9 @@ app.config['MAIL_SERVER'] = 'smtp.gmail.com'  # Change if using Outlook or anoth
 app.config['MAIL_PORT'] = 587  # Use 465 for SSL
 app.config['MAIL_USE_TLS'] = True  # Set to False if using SSL (MAIL_USE_SSL=True)
 app.config['MAIL_USE_SSL'] = False
-app.config['MAIL_USERNAME'] = 'your emailid  # Ensure this is your correct email
-app.config['MAIL_PASSWORD'] = 'your password'  # Use an app-specific password, not your real password
-app.config['MAIL_DEFAULT_SENDER'] = 'your emailid'  # This must match MAIL_USERNAME
+app.config['MAIL_USERNAME'] = 'kumarchandansingh2004@gmail.com' # Ensure this is your correct email
+app.config['MAIL_PASSWORD'] = 'cvua dzqj qfjc monc'  # Use an app-specific password, not your real password
+app.config['MAIL_DEFAULT_SENDER'] = 'kumarchandansingh2004@gmail.com'  # This must match MAIL_USERNAME
 
 mail = Mail(app)
 def send_mail(subject, recipient, body):
@@ -544,8 +554,10 @@ def prescribe_medicine(appointment_id):
         content = []
 
         # Add Jansevak header with green color and an <hr> tag
+        Jeevni = "default_value" 
         jansevak_header = Paragraph("<font color='green' size='24'><b>Jansevak: We Care for Your Health</b></font><hr/>", header_style)
-        content.append(jeevni)
+        content.append(Paragraph(Jeevni, styles["Normal"]))
+
 
         # Add space after Jansevak header
         content.append(Spacer(1, 12))
@@ -607,7 +619,7 @@ def prescribe_medicine(appointment_id):
         
         # Notify the patient via email
         subject = 'Medicine Prescribed'
-        body = f'Hello {appointment.name},\n\nYour medicines has been Prescribed by your dcotor. Please log in to the system to view the and downlaod the e-presciption.\n\nThank you for choosing Jansevak! We wish you good health.'
+        body = f'Hello {appointment.name},\n\nYour medicines has been Prescribed by your dcotor. Please log in to the system to view the and downlaod the e-presciption.\n\nThank you for choosing ArogyaAI! We wish you good health.'
         send_mail(subject, appointment.email, body)
 
         return redirect(url_for('doctor_patients'))
@@ -669,6 +681,36 @@ def braintumor():
         return render_template('index.html')
     
 
+# @app.route('/disease_predict', methods=['GET', 'POST'])
+# def disease_predict():
+#     username = None
+#     if 'user_id' in session:
+#         user = User.query.get(session['user_id'])
+#         username = user.username
+#         chart_data={}
+#         if request.method == 'POST':
+#             selected_symptoms = []
+#             if(request.form['Symptom1']!="") and (request.form['Symptom1'] not in selected_symptoms):
+#                 selected_symptoms.append(request.form['Symptom1'])
+#             if(request.form['Symptom2']!="") and (request.form['Symptom2'] not in selected_symptoms):
+#                 selected_symptoms.append(request.form['Symptom2'])
+#             if(request.form['Symptom3']!="") and (request.form['Symptom3'] not in selected_symptoms):
+#                 selected_symptoms.append(request.form['Symptom3'])
+#             if(request.form['Symptom4']!="") and (request.form['Symptom4'] not in selected_symptoms):
+#                 selected_symptoms.append(request.form['Symptom4'])
+#             if(request.form['Symptom5']!="") and (request.form['Symptom5'] not in selected_symptoms):
+#                 selected_symptoms.append(request.form['Symptom5'])
+#             disease, confidence_score = predict(selected_symptoms)
+            
+#             chart_data = {
+#             'disease': disease,
+#             'confidence_score': confidence_score
+#             }
+#             return render_template('disease_predict.html',symptoms=symptoms,disease=disease, chart_data=chart_data,confidence_score=confidence_score,username=username)
+            
+#         return render_template('disease_predict.html',symptoms=symptoms,username=username,chart_data=chart_data)
+#     else:
+#         return render_template('index.html')
 @app.route('/disease_predict', methods=['GET', 'POST'])
 def disease_predict():
     username = None
